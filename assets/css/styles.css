@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font: 1.6rem "Lato", sans-serif;
+  background-color: #242333;
+  color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.movie-container {
+  margin: 3rem 0;
+}
+
+.movie-container > select {
+  margin-left: 0.5rem;
+  padding: 0.51rem 1.5rem;
+  border: 0;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  font-size: 1.4rem;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+.showcase {
+  list-style-type: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #777;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.2rem;
+  margin: 1.5rem 0 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.showcase > li {
+  margin: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.showcase > li > small {
+  margin-left: 0.5rem;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem 0 2rem;
+  perspective: 100rem;
+}
+.screen{
+  /* width: 100%; */
+  height: 21.75rem;
+  background-color: #fff;
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+  transform: rotateX(-45deg);
+  margin-bottom: 3rem;
+}
+
+.row {
+  display: flex;
+}
+
+.seat {
+  width: 3rem;
+  height: 2.3rem;
+  background-color: #444451;
+  margin: 0.5rem;
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
+}
+
+.seat:nth-of-type(2) {
+  margin-right: 4rem;
+}
+
+.seat:nth-last-of-type(2) {
+  margin-left: 4rem;
+}
+
+.seat.selected {
+  background-color: #6feaf6;
+}
+
+.seat.occupied {
+  background-color: #fff;
+}
+
+.row > .seat:not(.seat.occupied):hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.text {
+  margin-top: 2rem;
+}
+
+.text > span {
+  color: #6feaf6;
+}
+
+
+.screen {
+  cursor: pointer;
+  width: 50%;
+  background-color: #000;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.controls {
+  width: 50%;
+  background-color: #333;
+  color: #fff;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  padding: 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.controls > button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  margin: 0 1rem;
+}
+.controls > .btn:focus {
+  outline: none;
+}
+.controls > .btn > .fa-play {
+  color: greenyellow;
+}
+.controls > .btn > .fa-stop {
+  color: tomato;
+}
+.controls > .btn > .fa-pause {
+  color: yellow;
+}
+.controls > .timestamps {
+  font-weight: bold;
+  margin-left: 1rem;
+  background-color: #666;
+}
+@media screen and (max-width: 80rem) {
+  .screen,
+  .controls {
+    width: 90%;
+  }
+}

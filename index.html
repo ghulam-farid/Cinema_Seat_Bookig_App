@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Cinema Seat Booking | JS</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="./assets/images/cinema.png" />
+        <!-- font awesome -->
+        <script
+        src="https://kit.fontawesome.com/d1a98e8057.js"
+        crossorigin="anonymous"
+      ></script>
+    <link href="./assets/css/progress.css" rel="stylesheet" />
+
+    <link href="./assets/css/styles.css" rel="stylesheet" />
+    <link href="./assets/css/styles1.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="movie-container">
+      <label for="movie">Pick a movie</label>
+      <select name="" id="movie">
+        <option value="10">Avengers Assemble ($10)</option>
+        <option value="11">Spider Man Home Comming($11)</option>
+        <option value="9">Avtar ($9)</option>
+        <option value="7">The Old Gaurds</option>
+      </select>
+    </div>
+
+    <ul class="showcase">
+      <li>
+        <div class="seat"></div>
+        <small>N/A</small>
+      </li>
+      <li>
+        <div class="seat selected"></div>
+        <small>Selected</small>
+      </li>
+      <li>
+        <div class="seat occupied"></div>
+        <small>Occupied</small>
+      </li>
+    </ul>
+
+    <div class="container">
+      <!-- <div class="screen"></div> -->
+
+
+      <video
+      src="./assets/videos/gone.mp4"
+      poster="./assets/images/poster.png"
+      id="video"
+      class="screen"
+    ></video>
+<!--     <div class="controls">
+      <button class="btn" id="play"><i class="fa-solid fa-play fa-2x"></i></button
+      ><button class="btn" id="stop"><i class="fa-solid fa-stop fa-2x"></i></button>
+      <input type="range" id="progress" class="progress" step="0.1" value="0" />
+      <span class="timestamps" id="timestamps">00:00</span>
+    </div> -->
+
+
+
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+      </div>
+    </div>
+
+    <p class="text">
+      You have selected <span id="count">0</span> seats for a price of $<span
+        id="total"
+        >0</span
+      >
+    </p>
+
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
